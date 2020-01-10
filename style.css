@@ -1,0 +1,647 @@
+
+
+h1{
+    font-family: Oswald;
+    font-style: normal;
+    font-size: 64px !important;
+    line-height: 71px !important;
+    color: #FFFEFE !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+h2{
+    font-family: Oswald-medium;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 36px !important;
+    line-height: 53px !important;
+    color: #262626;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+h4{
+    font-family: Oswald-medium;
+    font-style: normal;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 27px !important;
+    text-align: center;
+    color: #FFFEFE;
+}
+
+h6{
+    font-family: Fabrica;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    color: #414141;
+}
+
+p{
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: #FFFEFE;
+}
+
+.titulo{
+    background: #590004;
+    border-radius: 1px;
+    padding-top: 1.1%;
+    padding-bottom: 1.1%;
+    width: 10px;
+    margin-bottom: 2%;
+}
+
+.navbar {
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@font-face {
+    font-family: Fabrica;
+    src: url('fonts/fabrica.otf');
+}
+@font-face {
+    font-family: fabrica-regular;
+    src: url('fonts/fabrica.otf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('fonts/Oswald-Light.ttf');
+}
+@font-face {
+    font-family: Oswald-medium;
+    src: url('fonts/Oswald-Medium.ttf');
+}
+@font-face{
+    font-family: tahoma;
+    src: url('fonts/tahoma.ttf');
+}
+.navbar a{
+    font-family: Fabrica;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 14px !important;
+    text-align: center;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: #B10D14 !important; 
+}
+
+.navbar .btn{
+    background: #B10D14 ;
+    color: #FFFEFE !important;
+    font-size: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 18px 28px 18px 28px !important;
+    margin-right: 8px !important;
+}
+
+.navbar li{
+    padding-top: 12px;
+}
+
+.navbar img{
+    padding-left: 15px;
+}
+
+/*Banner*/
+.banner{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background: url(imagens/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left !important;
+}
+
+.banner h1{
+    margin-top: 78px;
+}
+
+.banner img{
+    float: left;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.banner .btn{
+    background-color:#960006 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
+    border-radius: 3px !important;
+    border: none !important;
+    font-family: Fabrica !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    padding:14px 30px 14px 30px !important;
+    white-space: nowrap;
+    color: color: #FFFEFE;
+    margin-top: 60px;
+}
+
+.btn:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
+}
+
+/*Portfólio*/
+.portfolio{
+    background: #E0E0E0;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.portfolio .container-fluid{
+    padding: 0 !important;
+}
+
+.portfolio .titulo, .portfolio h6{
+    margin-left: 8% !important;
+    margin-right: 8% !important;
+}
+
+.port img{
+	width: 100%;
+	height:auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.port{
+    float: left;
+    position: relative;
+}
+
+.logo-v {
+    width: 84px !important;
+    height: 79px !important;
+    padding: 0 !important;
+}
+
+.text{
+    float: left;
+    font-family: Oswald-medium;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 59px;
+    color: #FFFEFE !important;
+    padding-right: 25px;
+}
+
+.card-port{
+    position: absolute;
+    top: 12%;
+    left: 17%;
+}
+
+.card-button{
+    position: absolute;
+    top: 70%;
+    left: 16%;
+}
+
+.card-button .btn{
+    background: #B10D14 ;
+    color: #FFFEFE !important;
+    font-size: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 8px 50px 8px 50px !important;
+    margin-right: 8px !important;
+    white-space: nowrap;
+}
+
+.carrossel{
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 4%;
+}
+
+.carrossel .slick-prev:before {
+    content: url(imagens/direita.png);
+    width: 10%;
+    height: auto;
+
+}
+  
+.carrossel .slick-next:before {
+    content: url(imagens/esquerda.png);
+    width: 10%;
+    height: auto;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color:#B10D14 !important;
+    font-size: 15px !important;
+}
+
+.port-btn .btn{
+    background: #B10D14 ;
+    color: #FFFEFE !important;
+    font-size: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 18px 150px 18px 150px !important;
+    margin-right: 8px !important;
+}
+
+.port-btn{
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*Sobre Nós*/
+.sobre{
+    background: url(imagens/sobre.jpg);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sobre h2{
+    color: #FFFEFE;
+}
+
+.container-fluid{
+    padding-right: 8% !important;
+    padding-left: 8% !important;
+}
+.info-sobre p{
+   margin-top: 3%;
+   margin-bottom: 10%;
+}
+.info-sobre h2{
+    color: #B10D14;
+    margin-left: 0 !important;
+    text-align: left !important;
+}
+.info-sobre {
+    margin-top: 18%;
+}
+
+.info-sobre img{
+    margin-bottom: 5%;
+}
+
+.info-sobre .col-lg-4 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.info-sobre .row {
+    margin-top: 4%;
+}
+
+.valor-pad{
+    padding-left: 5%;
+}
+
+.sn-logo {
+    position: absolute;
+    left: 66%;
+    bottom: 100%;
+}
+
+/*Contador*/
+
+.contador{
+    background: #960006;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.contador h1{
+    font-weight: 300 !important;
+    font-size: 72px !important;
+    font-family: Oswald-medium !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contador .container-fluid{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.contador h2{
+    font-family: Oswald;
+    font-weight: 300 !important;
+    font-size: 18px !important;
+    line-height: 27px !important;
+    text-align: center;
+    color: #FFFEFE;
+}
+
+.contador .col-lg-3, .contador .col-sm-6{
+    background: url(imagens/logo-cont.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 35%;
+}
+
+/*Serviços*/
+.servicos{
+    background: #BFBFBF;
+    padding-top: 10%;
+    padding-bottom: 12%;
+}
+
+.servicos h6{
+    font-family: fabrica;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFEFE;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.servicos .col-lg-3, .servicos .col-md-4 , .servicos .col-sm-6{
+    padding: 8px 12px 8px 12px;
+    text-align: center;
+}
+
+.servicos .titulo{
+    margin-bottom: 8%;
+}
+
+.servicos .btn{
+    background: #FFFEFE;
+    color: #0D0D0D !important;
+    font-family: Fabrica;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 8px 35px 8px 35px !important;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.card-s{
+    background: #960006;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+/*Blog*/
+
+.blog{
+    padding-top: 10%;
+    padding-bottom: 6%;
+    background: url(imagens/bg-blog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-b h1{
+    font-family: Oswald-medium;
+    font-size: 40px !important;
+    line-height: 42px !important;
+    color: #262626 !important;
+    text-align: left !important;
+    margin-bottom: 4%;
+}
+
+.card-b h2{
+    font-size: 11px !important;
+    line-height: 16px !important;
+    color: #B10D14;
+    margin: 0 !important;
+    text-align: left !important;
+    margin-bottom: 2% !important;
+}
+
+.card-b p{
+    font-size: 13px !important;
+    line-height: 16px !important;
+    color: #414141 !important;
+    text-align: left !important;
+    margin-top: 2%;
+    margin-bottom: 9%;
+}
+
+.blog h6{
+    margin-top: 2% !important;
+    margin-bottom: 4% !important;
+}
+
+.card-b img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card-b{
+    background: #BFBFBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 15px 32px 35px 32px;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.card-b .btn{
+    background: #590004;
+    color: #FFFEFE !important;
+    font-size: 18px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 8px 50px 8px 50px !important;
+    white-space: nowrap;
+}
+
+.blog-btn{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.blog-btn .btn{
+    background: #590004;
+    color: #FFFEFE !important;
+    font-size: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 18px 50px 18px 50px !important;
+    margin-right: 8px !important;
+}
+/*contato*/
+.contato{
+    background: #E0E0E0;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.form-control {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-family: Fabrica;
+    font-size: 13px !important;
+    line-height: 13px !important;
+    color: #495057 !important;
+    background: #BFBFBF !important;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    text-align: center !important;
+    margin-bottom: 2%;
+}
+
+.contato .col-sm-6{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+textarea{
+    padding-top: 20px !important;
+}
+
+.contato p{
+    color: #960006;
+    font-size: 20px !important;
+    line-height: 2px !important;
+    padding-top: 1.6%;
+}
+
+.cont-btn{
+    text-align: center;
+}
+
+.contato .btn{
+    background: #960006;
+    color: #FFFEFE !important;
+    font-size: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    border:none !important;
+    padding: 10px 100px 10px 100px !important;
+    margin-top: 2%;
+
+}
+
+@media (max-width: 1400px){
+    .navbar a{
+        
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .text{
+        font-size: 35px !important;
+    }
+    .card-port{
+        left: 15%;
+    }
+    .logo-v {
+        width: 74px !important;
+        height: 69px !important;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .navbar a{
+        font-size: 12px;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .text{
+        font-size: 30px !important;
+    }
+    .card-port{
+        left: 13%;
+    }
+    .logo-v {
+        width: 70px !important;
+        height: 65px !important;
+    }
+    .carrossel{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .card-b h1{
+        font-size: 30px !important;
+        line-height: 32px !important;
+    }
+}
+
+@media (max-width: 991px){
+    .banner{
+        text-align: center !important;
+        padding-top: 200px;
+    }
+    .banner img{
+        float: none;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .sn-logo {
+        opacity: 0;
+        width: 0;
+    }
+
+    .info-sobre h2, .info-sobre{
+        text-align: center !important;
+        margin-top: 10%;
+    }
+
+    .valor-pad{
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 768px){
+    .banner img{
+        width: 320px;
+        height: auto;
+    }
+    .logo-v{
+        opacity: 0;
+    }
+
+    .card-button .btn {
+        font-size: 14px !important;
+        padding: 10% 40% 10% 40% !important;
+    }
+}
+
+@media (max-width: 567px){
+    .banner{
+        padding-top: 120px;
+    }
+
+    .banner .btn{
+        font-size: 18px !important;
+        padding:12px 25px 12px 25px !important;
+    }
+    .banner img{
+        width: 230px;
+        height: auto;
+    }
+    .banner h1{
+        font-size: 40px !important;
+        margin-top: 40px;
+        line-height: 52px !important;
+    }
+    .banner .btn{
+        padding:12px 15px 12px 15px !important;
+    }
+    .port-btn .btn{
+        padding: 12px 80px 12px 80px !important;
+    }
+
+}
