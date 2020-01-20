@@ -4,7 +4,7 @@ $('a[href^="#"]').on('click', function(e) {
         targetOffset = $(id).offset().top;
         
     $('html, body').animate({ 
-      scrollTop: targetOffset - 86
+      scrollTop: targetOffset - 50
     }, 500);
   });
   
@@ -38,4 +38,29 @@ $('a[href^="#"]').on('click', function(e) {
       }   
     ]
   });
-    
+
+  $('.carrossel-2').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    adaptiveHeight: true
+  });
+
+  $('.carrossel-3').slick({
+    display:none
+        breakpoint: 567,
+        settings: {
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          adaptiveHeight: true
+        }      
+  });

@@ -1,0 +1,14 @@
+body{
+    background: #E0E0E0 !important;
+    margin-top: 66px !important;
+}
+
+.pag-blog{
+    margin-top: ;
+}
+
+@media (max-width: 991px){
+    .teste{
+        display: none;
+    }
+}
