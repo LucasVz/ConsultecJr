@@ -49,18 +49,3 @@ $('a[href^="#"]').on('click', function(e) {
     arrows: false,
     adaptiveHeight: true
   });
-
-  $('.carrossel-3').slick({
-    display:none
-        breakpoint: 567,
-        settings: {
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          arrows: false,
-          adaptiveHeight: true
-        }      
-  });
