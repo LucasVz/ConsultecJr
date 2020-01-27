@@ -42,10 +42,10 @@ $('a[href^="#"]').on('click', function(e) {
   $('.carrossel-2').slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 400,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     arrows: false,
     adaptiveHeight: true
   });

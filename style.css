@@ -284,6 +284,7 @@ p{
     padding-right: 8% !important;
     padding-left: 8% !important;
 }
+
 .info-sobre p{
    margin-top: 3%;
    margin-bottom: 10%;
@@ -486,15 +487,13 @@ p{
     padding-bottom: 5%;
 }
 .form-control {
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
     font-family: Fabrica;
-    font-size: 13px !important;
+    font-size: 12px !important;
     line-height: 13px !important;
     color: #495057 !important;
     background: #BFBFBF !important;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+    border-radius: 3px !important;
     text-align: center !important;
     margin-bottom: 2%;
 }
