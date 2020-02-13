@@ -636,6 +636,29 @@ textarea{
     margin-bottom: 8%;
 }
 
+.modal-body{
+    background: #FFFEFE;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    padding-top: 4% !important;
+}
+
+.modal-body p{
+    font-family: Tahoma !important;
+    font-size: 19px !important;
+    line-height: 25px !important;
+    color: #414141 !important;
+}
+
+.modal-body .titulo{
+    margin-bottom: 3%;
+}
+
+.modal-dialog{
+    max-width: 1180px !important;
+    max-height: 630px !important;
+}
+
 @media (max-width: 1400px){
     .navbar a{
         
@@ -771,6 +794,17 @@ textarea{
     }
     .contato h2{
         white-space: pre !important;
+    }
+    .img-serv{
+        display: none;
+    }
+    .servicos h6{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .servicos .btn{
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
     }
 
 }

@@ -1,0 +1,43 @@
+.portfolio .container-fluid{
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+}
+
+.portfolio .titulo, .portfolio h6{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.portfolio{
+    padding-bottom: 0 !important;
+}
+
+.portfolio .col-lg-4{
+    padding: 0 !important;
+    margin-bottom: 2.5% !important;
+}
+
+.port{
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.modal-body{
+    background: #373737 !important;
+}
+
+.modal-dialog{
+    max-width: 1100px !important;
+    max-height: 600px !important;
+}
+
+.modal-img img{
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-3{
+    margin-right: 30px;
+    margin-left: 30px;
+    max-height: 600px !important;
+}

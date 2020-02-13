@@ -49,3 +49,12 @@ $('a[href^="#"]').on('click', function(e) {
     arrows: false,
     adaptiveHeight: true
   });
+
+  $('.carrossel-3').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
