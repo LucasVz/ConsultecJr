@@ -56,6 +56,7 @@ $('a[href^="#"]').on('click', function(e) {
     infinite: true,
     speed: 500,
     fade: true,
-    cssEase: 'linear'
+    adaptiveHeight: true,
+    adaptivewidth: true
   });
 
