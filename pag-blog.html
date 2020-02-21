@@ -17,6 +17,25 @@
     <title>Consultec Jr</title>
   </head>
 
+  <style>
+    .card-top{
+    background: url(imagens/card-post.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2%;
+    }
+    #modal-02 .modal-content {
+      background: url(imagens/modal-news.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 100% !important;
+      padding-bottom: 10%;
+    }
+  </style>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
       <a class="navbar-brand" href="#banner"><img src="imagens/logo.png" class="logo" alt="logo"></a>
@@ -26,18 +45,32 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"> <a class="nav-link" href="#banner">INÍCIO<span
+          <li class="nav-item active"> <a class="nav-link" href="#pag-blog">INÍCIO<span
                 class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-nos">SOBRE NÓS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicos">SERVIÇOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFÓLIO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
-          <li class="nav-item"><a class="nav-link" href="#depoimentos">DEPOIMENTOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
-          <a name="" id="" class="btn btn-primary" href="#" role="button">NEWSLETTER</a>
+          <li class="nav-item"><a class="nav-link" href="#footer">CONTATO</a></li>
+          <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-02">NEWSLETTER</button>
         </ul>
       </div>
     </nav>
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal-02">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-cont">
+              <h1>ASSINE NOSSA NEWSLETTER E RECEBA CONTEÚDOS EXCLUSIVOS:</h1>
+              <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
+              <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="pag-blog" id="pag-blog">
       <div class="container-fluid">
@@ -56,145 +89,17 @@
             <h6>Conheça o blog da Consultec Jr, e fique por dentro das novidades.</h6>
           </div>
 
-          <div class="col-12 responsivo-1">
-              <div class="coluna">
-                <div class="input-group">
-                  <input type="text" name="nome_resp" class="form-control" placeholder="BUSCAR" id="form">
-                  <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit" name="submit" value="Search">
-                      <img src="imagens/lupa.png" class="lupa" id="lupa" alt="lupa">
-                    </button>
-                  </div>
-                </div>
-
-                <h1>Conheça nossa newsletter:</h1>
-                <p>Assine nossa newsletter e receba conteúdos exclusivos:</p>
-
-                <input type="text" name="nome_resp" class="form-control" placeholder="DIGITE AQUI SEU EMAIL" id="form">
-
-                <div class="btn-coluna">
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
-                </div>
-              </div>
-          </div>
-
-
-          <div class="col-lg-8">
-            <div class="row">
-
-              <div class="col-lg-12 responsivo-3">
-                <div class="card-titulo">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h4> Postado em: 15/10/2019</h4>
-                </div>
-                <div class="carrossel-2">
-
-                  <div class="card-top">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                      massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
-                      mattis.
-                      Phasellus semper aliquam efficitur...</p>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                  </div>
-
-                  <div class="card-top">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                      massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
-                      mattis.
-                      Phasellus semper aliquam efficitur...</p>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-b">
-                  <h1>Fechar negócio com empresas juniores</h1>
-                  <h2>Postado em: 15/10/2019</h2>
-                  <img src="imagens/card-blog.png" alt="imagem da matéria">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
-                    massa
-                    erat...</p>
-                  <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="passador">
-              <li><</li>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>></li>
-            </div>
-            
-          </div>
-          <div class="col-lg-4 responsivo-2">
+          <div class="col-lg-4 order-lg-2">
             <div class="coluna">
-              <div class="input-group">
+              
+              <form class="input-group">
                 <input type="text" name="nome_resp" class="form-control" placeholder="DIGITE AQUI O QUE DESEJA BUSCAR" id="form">
                 <div class="input-group-append">
                   <button class="btn btn-secondary" type="submit" name="submit" value="Search">
                     <img src="imagens/lupa.png" class="lupa" id="lupa" alt="lupa">
                   </button>
                 </div>
-              </div>
+              </form>
 
               <h1>Conheça nossa newsletter:</h1>
               <p>Assine nossa newsletter e receba conteúdos exclusivos:</p>
@@ -204,7 +109,7 @@
               <div class="btn-coluna">
                 <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
               </div>
-
+              <div class="responsivo-2">
               <h1>Compartilhe:</h1>
               <div class="social">
                 <a href="#"><img src="imagens/B-face.png" alt=""></a>
@@ -243,20 +148,124 @@
               <div class="btn-coluna-2">
                 <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
                 <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
-              </div>
-
-              <div class="btn-coluna-2">
+                <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
+                <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
                 <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
                 <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
               </div>
-
-              <div class="btn-coluna-2">
-                <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
-                <a name="button" id="button" class="btn btn-primary" href="#" role="button">LOREM IPSUM</a>
               </div>
-
             </div>
 
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-12 responsivo-3">
+                <div class="carrossel-2">
+
+                  <div class="card-top">
+                    <div class="card-titulo">
+                      <h1>Fechar negócio com empresas juniores</h1>
+                      <h4> Postado em: 15/10/2019</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                      massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
+                      mattis.
+                      Phasellus semper aliquam efficitur...</p>
+                    <a name="" id="" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                  </div>
+
+                  <div class="card-top">
+                    <div class="card-titulo">
+                      <h1>Fechar negócio com empresas juniores</h1>
+                      <h4> Postado em: 15/10/2019</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                      massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
+                      mattis.
+                      Phasellus semper aliquam efficitur...</p>
+                    <a name="" id="" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-b">
+                  <h1>Fechar negócio com empresas juniores</h1>
+                  <h2>Postado em: 15/10/2019</h2>
+                  <img src="imagens/card-blog.png" alt="imagem da matéria">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed
+                    massa
+                    erat...</p>
+                  <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="passador">
+              <li><img src="imagens/left.png" alt="esquerda"></li>
+              <li>1,</li>
+              <li>2,</li>
+              <li>3...</li>
+              <li><img src="imagens/right.png" alt="direita"></li>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -266,7 +275,7 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.59665740467!2d-38.5769431755998!3d-3.74350747933629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bd77cb15aa7%3A0x5faa887508cf94cf!2sConsultec%20Jr.!5e0!3m2!1spt-BR!2sbr!4v1578968331635!5m2!1spt-BR!2sbr"
       width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">

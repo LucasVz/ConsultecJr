@@ -23,12 +23,13 @@
 }
 
 .modal-body{
-    background: #373737 !important;
+    background-color: #373737 !important;
+    padding: 0 !important;
 }
 
 .modal-dialog{
-    max-width: 1100px !important;
-    max-height: 600px !important;
+    max-width: 1000px !important;
+    max-height: 650px !important;
 }
 
 .modal-img img{
@@ -36,8 +37,48 @@
     height: auto;
 }
 
-.carrossel-3{
-    margin-right: 30px;
-    margin-left: 30px;
-    max-height: 600px !important;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.overlay .btn{
+    margin-top: 35%;
+    background: #590004;
+    font-family: Oswald-medium;
+    font-size: 40px;
+    line-height: 59px;
+    color: #FFFEFE;
+    z-index: 1000;
+}
+
+.slick-prev {
+    left: 10px !important;
+    z-index: 1000;
+}
+
+.slick-next {
+    right: 15px !important;
+}
+
+.slick-prev:before {
+    content: url(imagens/direita.png) !important;
+    width: 10% !important;
+    height: auto !important;
+
+  }
+
+.slick-next:before {
+    content: url(imagens/esquerda.png) !important;
+    width: 10% !important;
+    height: auto !important;
+  }
+
+.overlay .btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
+    background-color: #590004 !important;
 }

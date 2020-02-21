@@ -28,7 +28,7 @@ $('a[href^="#"]').on('click', function(e) {
         }
       },
       {
-        breakpoint: 567,
+        breakpoint: 577,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -52,6 +52,7 @@ $('a[href^="#"]').on('click', function(e) {
 
   $('.carrossel-3').slick({
     dots: false,
+    arrows:true,
     infinite: true,
     speed: 500,
     fade: true,

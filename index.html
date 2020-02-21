@@ -15,6 +15,69 @@
     <meta name="Description" content="#">
     <title>Consultec Jr</title>
   </head>
+  <style>
+    .banner {
+      padding-top: 20%;
+      padding-bottom: 10%;
+      background: url(imagens/banner.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: left !important;
+    }
+
+    .contador .col-lg-3,
+    .contador .col-sm-6 {
+      background: url(imagens/logo-cont.png);
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+      background-position-y: 35%;
+    }
+
+    .blog {
+      padding-top: 7%;
+      padding-bottom: 6%;
+      background: url(imagens/bg-blog.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .footer {
+      background: url(imagens/footer.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 5%;
+    }
+
+    .sobre {
+      background: url(imagens/sobre.jpg);
+      padding-top: 10%;
+      padding-bottom: 10%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #modal-02 .modal-content {
+      background: url(imagens/modal-news.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 100% !important;
+      padding-bottom: 10%;
+    }
+
+    .carrossel .slick-prev:before {
+      content: url(imagens/direita.png);
+      width: 10%;
+      height: auto;
+
+    }
+
+    .carrossel .slick-next:before {
+      content: url(imagens/esquerda.png);
+      width: 10%;
+      height: auto;
+    }
+  </style>
+
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
@@ -33,10 +96,34 @@
           <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
           <li class="nav-item"><a class="nav-link" href="#depoimentos">DEPOIMENTOS</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
-          <a name="" id="" class="btn btn-primary" href="#" role="button">NEWSLETTER</a>
+          <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-02">NEWSLETTER</button>
         </ul>
       </div>
     </nav>
+
+    <div class="news">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-02"><img
+          src="imagens/news.png" alt=""></button>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal-02">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-cont">
+              <h1>ASSINE NOSSA NEWSLETTER E RECEBA CONTEÚDOS EXCLUSIVOS:</h1>
+              <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
+              <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="banner" id="banner">
       <div class="container-fluid">
@@ -99,7 +186,7 @@
             <img class="sn-logo" src="imagens/logo-sn.png" alt="logo">
             <div class="info-sobre">
               <h2 class="valor-pad">VALORES</h2>
-              <div class="row">
+              <div class="row valores-resp">
                 <div class="col-sm-6 col-lg-4">
                   <img src="imagens/sn-icon1.png" alt="icones dos valores">
                   <h4>INCONFORMISMO E PROATIVIDADE</h4>
@@ -125,6 +212,25 @@
                   <h4>ÉTICA E EMPATIA</h4>
                 </div>
               </div>
+
+              <div class="carrossel carrossel-resp">
+                <div class="resp-valores">
+                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
+                </div>
+                <div class="resp-valores">
+                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
+                </div>
+                <div class="resp-valores">
+                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
+                </div>
+              </div>
+
+
+
+
             </div>
           </div>
         </div>
@@ -139,143 +245,263 @@
               <h2>SERVIÇOS</h2>
             </div>
           </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+          <div class="row serv-resp">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+
+
+          <div class="col-lg-12 carrossel-resp-2">
+            <div class="carrossel">
+              <div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
               </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+
+              <div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+                <div class="card-s">
+                  <h6>NOME DO SERVIÇO</h6>
+                  <div class="img-serv">
+                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                    MAIS</button>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-          
-          <div class="modal fade" id="modal-01" >
-            <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal" tabindex="-1" role="dialog" id="modal-01">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
-
-                <div class="modal-body texto">
-                  <div class="titulo">
-                  <h2>NOME DO SERVIÇO</h2>
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla varius urna.</p>
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="modal-body texto">
+                    <div class="titulo">
+                      <h2>NOME DO SERVIÇO</h2>
+                    </div>
+                    <div class="modal-cont">
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam
+                        sed
+                        massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
+                        mattis.
+                        Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus.
+                        Proin
+                        orci felis, tincidunt sit amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim
+                        quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam
+                        efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt
+                        sit
+                        amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat
+                        vestibulum.
+                        Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus
+                        malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla
+                        varius urna.</p>
+                      <img src="imagens/modal.png" alt="logo">
+                    </div>
+
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
 
         </div>
       </div>

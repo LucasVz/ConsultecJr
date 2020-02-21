@@ -37,6 +37,9 @@ body{
     background: #590004;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    margin-left: -30px !important;
+    margin-right: -30px !important;
+    margin-bottom: 40%;
 }
 
 .card-titulo h1{
@@ -60,14 +63,7 @@ body{
     margin: 0;
 }
 
-.card-top{
-    background: url(imagens/card-post.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 9%;
-    padding-left: 1%;
-    padding-bottom: 2%;
-}
+
 
 .pag-blog .slick-dots{
     margin-bottom: 50px;
@@ -165,27 +161,20 @@ body{
     margin-right: 26px;
 }
 
-.responsivo-1{
-    display: none !important;
-    padding-bottom: 8%;
-}
-
-.responsivo-1 .coluna{
-    width: 100% !important;
-    margin-left: 1% !important;
-    margin-right: 1% !important;
-}
 .passador{
     margin-top: 4%;
     text-align: center;
 }
 
 .passador li{
-    font-family: tahoma;
     display: inline-block !important;
-    font-size: 25px;
-    line-height: 30px;
-    color:#960006;
+    font-family: Oswald-medium;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 4.5px;
+    color: #0D0D0D;
 }
 
 @media (max-width: 1200px){
@@ -196,10 +185,8 @@ body{
 }
 
 @media (max-width: 991px){    
-    .responsivo-1{
-        display: flex !important;
-    }
-    .responsivo-2, .responsivo-3{
+
+    .responsivo-3{
         display: none !important;
     }
     .btn-coluna{
@@ -210,16 +197,13 @@ body{
         padding-right: 5% !important;
         padding-left: 5% !important;
     }
-}
-@media (max-width: 768px){
-    .responsivo-1{
 
+    .responsivo-2{
+        display: none;
     }
 }
+
 @media (max-width: 567px){
-    .responsivo-1{
-
-    }
     .pag-blog h6{
         padding-bottom: 6%;
         padding-top: 6%;
@@ -244,5 +228,12 @@ body{
     }
     .pag-blog{
         padding-top: 20%;
+    }
+    .btn-coluna{
+        margin-bottom: 15% !important;
+        margin-top: 3% !important;
+    }
+    .btn-coluna .btn{
+        padding: 10px 22px 10px 22px !important;
     }
 }
