@@ -18,7 +18,7 @@
 <style>
   .banner {
     padding-top: 20%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
     background: url(imagens/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,8 +76,18 @@
     width: 10%;
     height: auto;
   }
-</style>
+  .slick-prev:before {
+    content: url(imagens/direita.png) !important;
+    width: 10% !important;
+    height: auto !important;
+  }
 
+  .slick-next:before {
+    content: url(imagens/esquerda.png) !important;
+    width: 10% !important;
+    height: auto !important;
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
@@ -119,56 +129,48 @@
       </div>
     </div>
   </div>
+  <!-- The Modal -->
+  <div class="modal" tabindex="-1" id="modal-01">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="carrossel-3">
 
-
-                <!-- The Modal -->
-                <div class="modal" tabindex="-1" id="teste">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-body">
-                              <div class="carrossel-3">
-
-                                  <div class="modal-img">
-                                      <img src="imagens/modal-1.png" alt="">
-                                      <div class="overlay">
-                                          <button type="button" class="close" data-dismiss="modal"
-                                              aria-label="Fechar">
-                                              <span aria-hidden="true">&times;</span>
-                                          </button>
-                                          <a name="button" id="button" class="btn btn-primary" href="#"
-                                              role="button">SOLICITE UM ORÇAMENTO</a>
-                                      </div>
-                                  </div>
-
-                                  <div class="modal-img">
-                                      <img src="imagens/modal-1.png" alt="">
-                                      <div class="overlay">
-                                          <button type="button" class="close" data-dismiss="modal"
-                                              aria-label="Fechar">
-                                              <span aria-hidden="true">&times;</span>
-                                          </button>
-                                          <a name="button" id="button" class="btn btn-primary" href="#"
-                                              role="button">SOLICITE UM ORÇAMENTO</a>
-                                      </div>
-                                  </div>
-
-                                  <div class="modal-img">
-                                      <img src="imagens/banner-pb.jpg" alt="">
-                                      <div class="overlay">
-                                          <button type="button" class="close" data-dismiss="modal"
-                                              aria-label="Fechar">
-                                              <span aria-hidden="true">&times;</span>
-                                          </button>
-                                          <a name="button" id="button" class="btn btn-primary" href="#"
-                                              role="button">SOLICITE UM ORÇAMENTO</a>
-                                      </div>
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+            <div class="modal-img">
+              <img src="imagens/modal-1.png" alt="">
+              <div class="overlay">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM ORÇAMENTO</a>
               </div>
+            </div>
+
+            <div class="modal-img">
+              <img src="imagens/modal-1.png" alt="">
+              <div class="overlay">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM ORÇAMENTO</a>
+              </div>
+            </div>
+
+            <div class="modal-img">
+              <img src="imagens/banner-pb.jpg" alt="">
+              <div class="overlay">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM ORÇAMENTO</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="banner" id="banner">
     <div class="container-fluid">
@@ -273,9 +275,6 @@
               </div>
             </div>
 
-
-
-
           </div>
         </div>
       </div>
@@ -297,7 +296,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -307,18 +306,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                MAIS</button>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -329,20 +317,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                MAIS</button>
-            </div>
-          </div>
-
-
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -353,7 +328,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -364,7 +339,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -375,20 +350,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                MAIS</button>
-            </div>
-          </div>
-
-
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card-s">
-              <h6>NOME DO SERVIÇO</h6>
-              <div class="img-serv">
-                <img src="imagens/Servicos-1.png" alt="icones de serviços">
-              </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -399,7 +361,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -410,7 +372,7 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
@@ -421,12 +383,44 @@
               <div class="img-serv">
                 <img src="imagens/Servicos-1.png" alt="icones de serviços">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                 MAIS</button>
             </div>
           </div>
         </div>
-
 
         <div class="col-lg-12 carrossel-resp-2">
           <div class="carrossel">
@@ -436,7 +430,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -444,7 +438,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -452,7 +446,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -460,7 +454,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
             </div>
@@ -471,7 +465,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -479,7 +473,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -487,7 +481,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
               <div class="card-s">
@@ -495,7 +489,7 @@
                 <div class="img-serv">
                   <img src="imagens/Servicos-1.png" alt="icones de serviços">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-03">SAIBA
                   MAIS</button>
               </div>
             </div>
@@ -503,7 +497,7 @@
           </div>
         </div>
 
-        <div class="modal" tabindex="-1" role="dialog" id="modal-01">
+        <div class="modal" tabindex="-1" role="dialog" id="modal-03">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -540,13 +534,11 @@
                     <img src="imagens/modal.png" alt="logo">
                   </div>
 
-
                 </div>
               </div>
             </div>
           </div>
         </div>
-
 
       </div>
     </div>
@@ -567,7 +559,7 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#teste">NEWSLETTER</button>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
 
@@ -578,7 +570,7 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
 
@@ -589,7 +581,7 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
 
@@ -600,7 +592,7 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
 
@@ -611,7 +603,7 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
 
@@ -622,13 +614,13 @@
             <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
           <div class="card-button">
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
           </div>
         </div>
       </div>
 
       <div class="port-btn">
-        <a name="button" id="button" class="btn btn-primary" href="#" role="button">MAIS PROJETOS</a>
+        <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-01">SAIBA MAIS</button>
       </div>
     </div>
   </section>
@@ -649,7 +641,7 @@
             <img src="imagens/card-blog.png" alt="imagem da matéria">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
               erat...</p>
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -659,7 +651,7 @@
             <img src="imagens/card-blog.png" alt="imagem da matéria">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
               erat...</p>
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
           </div>
         </div>
         <div class="col-lg-4">
@@ -669,12 +661,12 @@
             <img src="imagens/card-blog.png" alt="imagem da matéria">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
               erat...</p>
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+            <a name="button" id="button" class="btn btn-primary" href="post-blog.html" role="button">SAIBA MAIS</a>
           </div>
         </div>
         <div class="col-sm-12">
           <div class="blog-btn">
-            <a name="button" id="button" class="btn btn-primary" href="https://lucasvz.github.io/ConsultecJr/pag-blog"
+            <a name="button" id="button" class="btn btn-primary" href="pag-blog.html"
               role="button">MAIS POSTAGENS</a>
           </div>
         </div>
@@ -707,8 +699,6 @@
       </div>
     </div>
   </section>
-
-
 
   <section class="contato" id="contato">
     <div class="container-fluid">
