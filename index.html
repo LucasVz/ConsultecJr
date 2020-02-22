@@ -1,758 +1,803 @@
 <!doctype html>
-<div /div lang="pt-br">
+<html lang="pt-br">
 
-  <head>
-    <!--Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--css-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--Links para o slick-->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <!--Bootstrap CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <meta name="Description" content="#">
-    <title>Consultec Jr</title>
-  </head>
-  <style>
-    .banner {
-      padding-top: 20%;
-      padding-bottom: 10%;
-      background: url(imagens/banner.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      text-align: left !important;
-    }
+<head>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!--Links para o slick-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!--Bootstrap CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="Description" content="#">
+  <title>Consultec Jr</title>
+</head>
+<style>
+  .banner {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background: url(imagens/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left !important;
+  }
 
-    .contador .col-lg-3,
-    .contador .col-sm-6 {
-      background: url(imagens/logo-cont.png);
-      background-repeat: no-repeat;
-      background-position-x: 50%;
-      background-position-y: 35%;
-    }
+  .contador .col-lg-3,
+  .contador .col-sm-6 {
+    background: url(imagens/logo-cont.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 35%;
+  }
 
-    .blog {
-      padding-top: 7%;
-      padding-bottom: 6%;
-      background: url(imagens/bg-blog.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  .blog {
+    padding-top: 7%;
+    padding-bottom: 6%;
+    background: url(imagens/bg-blog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    .footer {
-      background: url(imagens/footer.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 5%;
-    }
+  .footer {
+    background: url(imagens/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+  }
 
-    .sobre {
-      background: url(imagens/sobre.jpg);
-      padding-top: 10%;
-      padding-bottom: 10%;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  .sobre {
+    background: url(imagens/sobre.jpg);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    #modal-02 .modal-content {
-      background: url(imagens/modal-news.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 100% !important;
-      padding-bottom: 10%;
-    }
+  #modal-02 .modal-content {
+    background: url(imagens/modal-news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100% !important;
+    padding-bottom: 10%;
+  }
 
-    .carrossel .slick-prev:before {
-      content: url(imagens/direita.png);
-      width: 10%;
-      height: auto;
+  .carrossel .slick-prev:before {
+    content: url(imagens/direita.png);
+    width: 10%;
+    height: auto;
 
-    }
+  }
 
-    .carrossel .slick-next:before {
-      content: url(imagens/esquerda.png);
-      width: 10%;
-      height: auto;
-    }
-  </style>
+  .carrossel .slick-next:before {
+    content: url(imagens/esquerda.png);
+    width: 10%;
+    height: auto;
+  }
+</style>
 
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-      <a class="navbar-brand" href="#banner"><img src="imagens/logo.png" class="logo" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"> <a class="nav-link" href="#banner">INÍCIO<span
-                class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-nos">SOBRE NÓS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicos">SERVIÇOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFÓLIO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
-          <li class="nav-item"><a class="nav-link" href="#depoimentos">DEPOIMENTOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
-          <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-02">NEWSLETTER</button>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="news">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-02"><img
-          src="imagens/news.png" alt=""></button>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <a class="navbar-brand" href="#banner"><img src="imagens/logo.png" class="logo" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#banner">INÍCIO<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-nos">SOBRE NÓS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">SERVIÇOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFÓLIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#depoimentos">DEPOIMENTOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
+        <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#modal-02">NEWSLETTER</button>
+      </ul>
     </div>
+  </nav>
 
-    <div class="modal" tabindex="-1" role="dialog" id="modal-02">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="modal-cont">
-              <h1>ASSINE NOSSA NEWSLETTER E RECEBA CONTEÚDOS EXCLUSIVOS:</h1>
-              <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
-            </div>
+  <div class="modal" tabindex="-1" role="dialog" id="modal-02">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-cont">
+            <h1>ASSINE NOSSA NEWSLETTER E RECEBA CONTEÚDOS EXCLUSIVOS:</h1>
+            <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <section class="banner" id="banner">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-10">
-            <img src="imagens/logo-banner.png" alt="logo">
-            <h1>Projetamos <b>sonhos</b> e construimos o <b>futuro.</b></h1>
-            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM ORÇAMENTO</a>
-          </div>
+
+                <!-- The Modal -->
+                <div class="modal" tabindex="-1" id="teste">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <div class="carrossel-3">
+
+                                  <div class="modal-img">
+                                      <img src="imagens/modal-1.png" alt="">
+                                      <div class="overlay">
+                                          <button type="button" class="close" data-dismiss="modal"
+                                              aria-label="Fechar">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <a name="button" id="button" class="btn btn-primary" href="#"
+                                              role="button">SOLICITE UM ORÇAMENTO</a>
+                                      </div>
+                                  </div>
+
+                                  <div class="modal-img">
+                                      <img src="imagens/modal-1.png" alt="">
+                                      <div class="overlay">
+                                          <button type="button" class="close" data-dismiss="modal"
+                                              aria-label="Fechar">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <a name="button" id="button" class="btn btn-primary" href="#"
+                                              role="button">SOLICITE UM ORÇAMENTO</a>
+                                      </div>
+                                  </div>
+
+                                  <div class="modal-img">
+                                      <img src="imagens/banner-pb.jpg" alt="">
+                                      <div class="overlay">
+                                          <button type="button" class="close" data-dismiss="modal"
+                                              aria-label="Fechar">
+                                              <span aria-hidden="true">&times;</span>
+                                          </button>
+                                          <a name="button" id="button" class="btn btn-primary" href="#"
+                                              role="button">SOLICITE UM ORÇAMENTO</a>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+  <section class="banner" id="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10">
+          <img src="imagens/logo-banner.png" alt="logo">
+          <h1>Projetamos <b>sonhos</b> e construimos o <b>futuro.</b></h1>
+          <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM ORÇAMENTO</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contador" id="contador">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <h1>200</h1>
-            <h2>LOREN IPSIUM</h2>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h1>50</h1>
-            <h2>LOREN IPSIUM</h2>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h1>50</h1>
-            <h2>LOREN IPSIUM</h2>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <h1>70</h1>
-            <h2>LOREN IPSIUM</h2>
-          </div>
+  <section class="contador" id="contador">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <h1>200</h1>
+          <h2>LOREN IPSIUM</h2>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h1>50</h1>
+          <h2>LOREN IPSIUM</h2>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h1>50</h1>
+          <h2>LOREN IPSIUM</h2>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h1>70</h1>
+          <h2>LOREN IPSIUM</h2>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="sobre" id="sobre-nos">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="titulo">
-              <h2>SOBRE NÓS</h2>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="info-sobre">
-              <h2>NOSSA HISTÓRIA</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-                erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
-                semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis,
-                tincidunt sit amet nibh in, fringilla varius urna.</p>
-              <h2>MISSÃO</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-                erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
-                semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis,
-                tincidunt sit amet nibh in, fringilla varius urna.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <img class="sn-logo" src="imagens/logo-sn.png" alt="logo">
-            <div class="info-sobre">
-              <h2 class="valor-pad">VALORES</h2>
-              <div class="row valores-resp">
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
-                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon2.png" alt="icones dos valores">
-                  <h4>COMPROMETIMENTO</h4>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon3.png" alt="icones dos valores">
-                  <h4>SINERGIA</h4>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon4.png" alt="icones dos valores">
-                  <h4>SENTIMENTO DE DONO</h4>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon5.png" alt="icones dos valores">
-                  <h4>AUTODISCIPLINA</h4>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <img src="imagens/sn-icon6.png" alt="icones dos valores">
-                  <h4>ÉTICA E EMPATIA</h4>
-                </div>
-              </div>
-
-              <div class="carrossel carrossel-resp">
-                <div class="resp-valores">
-                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
-                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
-                </div>
-                <div class="resp-valores">
-                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
-                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
-                </div>
-                <div class="resp-valores">
-                  <img src="imagens/sn-icon1.png" alt="icones dos valores">
-                  <h4>INCONFORMISMO E PROATIVIDADE</h4>
-                </div>
-              </div>
-
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="servicos" id="servicos">
-      <div class="container-fluid">
-        <div class="row ">
-          <div class="col-lg-12">
-            <div class="titulo">
-              <h2>SERVIÇOS</h2>
-            </div>
-          </div>
-          <div class="row serv-resp">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card-s">
-                <h6>NOME DO SERVIÇO</h6>
-                <div class="img-serv">
-                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                  MAIS</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-12 carrossel-resp-2">
-            <div class="carrossel">
-              <div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-              </div>
-
-              <div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-                <div class="card-s">
-                  <h6>NOME DO SERVIÇO</h6>
-                  <div class="img-serv">
-                    <img src="imagens/Servicos-1.png" alt="icones de serviços">
-                  </div>
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
-                    MAIS</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="modal" tabindex="-1" role="dialog" id="modal-01">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <div class="modal-body texto">
-                    <div class="titulo">
-                      <h2>NOME DO SERVIÇO</h2>
-                    </div>
-                    <div class="modal-cont">
-                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam
-                        sed
-                        massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
-                        mattis.
-                        Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus.
-                        Proin
-                        orci felis, tincidunt sit amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim
-                        quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam
-                        efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt
-                        sit
-                        amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat
-                        vestibulum.
-                        Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus
-                        malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla
-                        varius urna.</p>
-                      <img src="imagens/modal.png" alt="logo">
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-      <div class="container-fluid">
-        <div class="titulo">
-          <h2>PORTFÓLIO</h2>
-        </div>
-        <h6>Saiba mais sobre nossos projetos, conheça nosso portfólio.</h6>
-
-        <div class="carrossel">
-          <div class="port">
-            <img src="imagens/galeria1.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="port">
-            <img src="imagens/galeria2.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="port">
-            <img src="imagens/galeria3.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="port">
-            <img src="imagens/galeria2.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="port">
-            <img src="imagens/galeria3.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-
-          <div class="port">
-            <img src="imagens/galeria1.jpg" alt="galeria">
-            <div class="card-port">
-              <h3 class="text">PORTFÓLIO</h3>
-              <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-            </div>
-            <div class="card-button">
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="port-btn">
-          <a name="button" id="button" class="btn btn-primary" href="#" role="button">MAIS PROJETOS</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog" id="blog">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="titulo">
-              <h2>BLOG</h2>
-            </div>
-            <h6>Conheça o blog da Consultec Jr, e fique por dentro das novidades.</h6>
-          </div>
-          <div class="col-lg-4">
-            <div class="card-b">
-              <h1>Fechar negócio com empresas juniores</h1>
-              <h2>Postado em: 15/10/2019</h2>
-              <img src="imagens/card-blog.png" alt="imagem da matéria">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-                erat...</p>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card-b">
-              <h1>Fechar negócio com empresas juniores</h1>
-              <h2>Postado em: 15/10/2019</h2>
-              <img src="imagens/card-blog.png" alt="imagem da matéria">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-                erat...</p>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card-b">
-              <h1>Fechar negócio com empresas juniores</h1>
-              <h2>Postado em: 15/10/2019</h2>
-              <img src="imagens/card-blog.png" alt="imagem da matéria">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-                erat...</p>
-              <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="blog-btn">
-              <a name="button" id="button" class="btn btn-primary" href="https://lucasvz.github.io/ConsultecJr/pag-blog"
-                role="button">MAIS POSTAGENS</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="depoimentos" id="depoimentos">
-      <div class="container-fluid">
+  <section class="sobre" id="sobre-nos">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-lg-12">
           <div class="titulo">
-            <h2>DEPOIMENTOS</h2>
+            <h2>SOBRE NÓS</h2>
           </div>
         </div>
-        <div class="carrossel-2">
-          <div class="info-depoimentos">
-            <img src="imagens/Servicos-1.png" alt="">
-            <h1>Jorge Rodrigues</h1>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+        <div class="col-lg-6">
+          <div class="info-sobre">
+            <h2>NOSSA HISTÓRIA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
               erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
-              semper aliquam efficitur.</h6>
+              semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis,
+              tincidunt sit amet nibh in, fringilla varius urna.</p>
+            <h2>MISSÃO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+              erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
+              semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis,
+              tincidunt sit amet nibh in, fringilla varius urna.</p>
           </div>
-          <div class="info-depoimentos">
-            <img src="imagens/depoimentos.png" alt="">
-            <h1>Jorge Rodrigues</h1>
-            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
-              erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
-              semper aliquam efficitur.</h6>
+        </div>
+        <div class="col-lg-6">
+          <img class="sn-logo" src="imagens/logo-sn.png" alt="logo">
+          <div class="info-sobre">
+            <h2 class="valor-pad">VALORES</h2>
+            <div class="row valores-resp">
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                <h4>INCONFORMISMO E PROATIVIDADE</h4>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon2.png" alt="icones dos valores">
+                <h4>COMPROMETIMENTO</h4>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon3.png" alt="icones dos valores">
+                <h4>SINERGIA</h4>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon4.png" alt="icones dos valores">
+                <h4>SENTIMENTO DE DONO</h4>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon5.png" alt="icones dos valores">
+                <h4>AUTODISCIPLINA</h4>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <img src="imagens/sn-icon6.png" alt="icones dos valores">
+                <h4>ÉTICA E EMPATIA</h4>
+              </div>
+            </div>
+
+            <div class="carrossel carrossel-resp">
+              <div class="resp-valores">
+                <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                <h4>INCONFORMISMO E PROATIVIDADE</h4>
+              </div>
+              <div class="resp-valores">
+                <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                <h4>INCONFORMISMO E PROATIVIDADE</h4>
+              </div>
+              <div class="resp-valores">
+                <img src="imagens/sn-icon1.png" alt="icones dos valores">
+                <h4>INCONFORMISMO E PROATIVIDADE</h4>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-
-    <section class="contato" id="contato">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="titulo">
-              <h2>SOLICITE
-UM ORÇAMENTO</h2>
+  <section class="servicos" id="servicos">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-12">
+          <div class="titulo">
+            <h2>SERVIÇOS</h2>
+          </div>
+        </div>
+        <div class="row serv-resp">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
             </div>
           </div>
-          <div class="col-sm-6">
-            <p>PREENCHA OS CAMPOS ABAIXO:</p>
-            <input type="text" name="nome_resp" class="form-control" placeholder="NOME" id="form">
-            <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
-            <input type="text" name="nome_resp" class="form-control" placeholder="TELEFONE" id="form">
-          </div>
-          <div class="col-sm-6">
-            <p>ESCOLHA O TIPO DE SERVIÇO:</p>
-            <select class="form-control" id="form">
-              <option>SERVIÇOS</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            <p>CONTE-NOS MAIS:</p>
-            <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAGEM"
-                rows="2"></textarea>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
             </div>
           </div>
 
-          <div class="col-sm-12">
-            <p>COMO FICOU SABENDO DA CONSULTEC?</p>
-            <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAGEM"
-                rows="2"></textarea>
-              <div class="cont-btn">
-                <a name="button" id="button" class="btn btn-primary" href="#" role="button">ENVIAR</a>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card-s">
+              <h6>NOME DO SERVIÇO</h6>
+              <div class="img-serv">
+                <img src="imagens/Servicos-1.png" alt="icones de serviços">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                MAIS</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 carrossel-resp-2">
+          <div class="carrossel">
+            <div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+              <div class="card-s">
+                <h6>NOME DO SERVIÇO</h6>
+                <div class="img-serv">
+                  <img src="imagens/Servicos-1.png" alt="icones de serviços">
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+                  MAIS</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modal-01">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body texto">
+                  <div class="titulo">
+                    <h2>NOME DO SERVIÇO</h2>
+                  </div>
+                  <div class="modal-cont">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam
+                      sed
+                      massa erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a
+                      mattis.
+                      Phasellus semper aliquam efficitur. Proin eu lacus malesuada, congue orci id, mattis purus.
+                      Proin
+                      orci felis, tincidunt sit amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim
+                      quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam
+                      efficitur. Proin eu lacus malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt
+                      sit
+                      amet nibh in, fringilla varius urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas id dapibus nulla. Aliquam sed massa erat. Etiam vitae enim quis leo volutpat
+                      vestibulum.
+                      Donec sagittis scelerisque nisl a mattis. Phasellus semper aliquam efficitur. Proin eu lacus
+                      malesuada, congue orci id, mattis purus. Proin orci felis, tincidunt sit amet nibh in, fringilla
+                      varius urna.</p>
+                    <img src="imagens/modal.png" alt="logo">
+                  </div>
+
+
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.59665740467!2d-38.5769431755998!3d-3.74350747933629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bd77cb15aa7%3A0x5faa887508cf94cf!2sConsultec%20Jr.!5e0!3m2!1spt-BR!2sbr!4v1578968331635!5m2!1spt-BR!2sbr"
-      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <section class="portfolio" id="portfolio">
+    <div class="container-fluid">
+      <div class="titulo">
+        <h2>PORTFÓLIO</h2>
+      </div>
+      <h6>Saiba mais sobre nossos projetos, conheça nosso portfólio.</h6>
 
-    <section class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="col-footer">
-              <h1>SOBRE NÓS</h1>
-              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
+      <div class="carrossel">
+        <div class="port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
           </div>
-          <div class="col-md-4">
-            <h1>CONTATO</h1>
-            <div class="info">
-              <img src="imagens/fone.png" alt="telefone">
-              <p>(84) 99803-5858</p>
-              <br>
-              <img src="imagens/email.png" alt="email">
-              <p>contato@consultecjr.com</p>
-            </div>
+          <div class="card-button">
+            <button name="" id="" class="btn btn-primary" data-toggle="modal" data-target="#teste">NEWSLETTER</button>
           </div>
-          <div class="col-md-4">
-            <h1>FUNCIONAMENTO</h1>
-            <p>Segunda à Sexta: Xh a Yh</p>
-            <h1>REDES SOCIAIS</h1>
-            <div class="social">
-              <a href="#"><img src="imagens/facebook.png" alt="facebook"></a>
-              <a href="#"><img src="imagens/instagram.png" alt="instagram"></a>
-              <a href="#"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+        </div>
+
+        <div class="port">
+          <img src="imagens/galeria2.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+
+        <div class="port">
+          <img src="imagens/galeria3.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+
+        <div class="port">
+          <img src="imagens/galeria2.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+
+        <div class="port">
+          <img src="imagens/galeria3.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+
+        <div class="port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="port-btn">
+        <a name="button" id="button" class="btn btn-primary" href="#" role="button">MAIS PROJETOS</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="titulo">
+            <h2>BLOG</h2>
+          </div>
+          <h6>Conheça o blog da Consultec Jr, e fique por dentro das novidades.</h6>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-b">
+            <h1>Fechar negócio com empresas juniores</h1>
+            <h2>Postado em: 15/10/2019</h2>
+            <img src="imagens/card-blog.png" alt="imagem da matéria">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+              erat...</p>
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-b">
+            <h1>Fechar negócio com empresas juniores</h1>
+            <h2>Postado em: 15/10/2019</h2>
+            <img src="imagens/card-blog.png" alt="imagem da matéria">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+              erat...</p>
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-b">
+            <h1>Fechar negócio com empresas juniores</h1>
+            <h2>Postado em: 15/10/2019</h2>
+            <img src="imagens/card-blog.png" alt="imagem da matéria">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+              erat...</p>
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA MAIS</a>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="blog-btn">
+            <a name="button" id="button" class="btn btn-primary" href="https://lucasvz.github.io/ConsultecJr/pag-blog"
+              role="button">MAIS POSTAGENS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos" id="depoimentos">
+    <div class="container-fluid">
+      <div class="col-lg-12">
+        <div class="titulo">
+          <h2>DEPOIMENTOS</h2>
+        </div>
+      </div>
+      <div class="carrossel-2">
+        <div class="info-depoimentos">
+          <img src="imagens/Servicos-1.png" alt="">
+          <h1>Jorge Rodrigues</h1>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+            erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
+            semper aliquam efficitur.</h6>
+        </div>
+        <div class="info-depoimentos">
+          <img src="imagens/depoimentos.png" alt="">
+          <h1>Jorge Rodrigues</h1>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id dapibus nulla. Aliquam sed massa
+            erat. Etiam vitae enim quis leo volutpat vestibulum. Donec sagittis scelerisque nisl a mattis. Phasellus
+            semper aliquam efficitur.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contato" id="contato">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="titulo">
+            <h2>SOLICITE
+              UM ORÇAMENTO</h2>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <p>PREENCHA OS CAMPOS ABAIXO:</p>
+          <input type="text" name="nome_resp" class="form-control" placeholder="NOME" id="form">
+          <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
+          <input type="text" name="nome_resp" class="form-control" placeholder="TELEFONE" id="form">
+        </div>
+        <div class="col-sm-6">
+          <p>ESCOLHA O TIPO DE SERVIÇO:</p>
+          <select class="form-control" id="form">
+            <option>SERVIÇOS</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <p>CONTE-NOS MAIS:</p>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAGEM" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <p>COMO FICOU SABENDO DA CONSULTEC?</p>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="MENSAGEM" rows="2"></textarea>
+            <div class="cont-btn">
+              <a name="button" id="button" class="btn btn-primary" href="#" role="button">ENVIAR</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="rodape">
-        <p><b>Consultec Jr</b> © 2019 . Desenvolvido pela</p>
-        <a href="http://www.ejectufrn.com.br" target="_blank"><img src="imagens/eject-logo.png" alt="logo eject"></a>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="Function.js"></script>
-  </body>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.59665740467!2d-38.5769431755998!3d-3.74350747933629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bd77cb15aa7%3A0x5faa887508cf94cf!2sConsultec%20Jr.!5e0!3m2!1spt-BR!2sbr!4v1578968331635!5m2!1spt-BR!2sbr"
+    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+  <section class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-footer">
+            <h1>SOBRE NÓS</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h1>CONTATO</h1>
+          <div class="info">
+            <img src="imagens/fone.png" alt="telefone">
+            <p>(84) 99803-5858</p>
+            <br>
+            <img src="imagens/email.png" alt="email">
+            <p>contato@consultecjr.com</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h1>FUNCIONAMENTO</h1>
+          <p>Segunda à Sexta: Xh a Yh</p>
+          <h1>REDES SOCIAIS</h1>
+          <div class="social">
+            <a href="#"><img src="imagens/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="imagens/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rodape">
+      <p><b>Consultec Jr</b> © 2019 . Desenvolvido pela</p>
+      <a href="http://www.ejectufrn.com.br" target="_blank"><img src="imagens/eject-logo.png" alt="logo eject"></a>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="Function.js"></script>
+</body>
+
+</html>

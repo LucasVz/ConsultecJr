@@ -709,6 +709,73 @@ textarea{
 }
 
 
+
+
+
+
+
+.modal-body{
+    background-color: #373737 !important;
+    padding: 0 !important;
+}
+
+.modal-img img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.overlay .btn{
+    margin-top: 35%;
+    background: #590004;
+    font-family: Oswald-medium;
+    font-size: 40px;
+    line-height: 59px;
+    color: #FFFEFE;
+    z-index: 1000;
+}
+
+.slick-prev {
+    left: 10px !important;
+    z-index: 1000;
+}
+
+.slick-next {
+    right: 15px !important;
+}
+
+.slick-prev:before {
+    content: url(imagens/direita.png) !important;
+    width: 10% !important;
+    height: auto !important;
+
+  }
+
+.slick-next:before {
+    content: url(imagens/esquerda.png) !important;
+    width: 10% !important;
+    height: auto !important;
+  }
+
+.overlay .btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
+    background-color: #590004 !important;
+}
+
+
+
+
+
+
+
 @media (max-width: 1400px){
     .navbar a{
         
@@ -869,5 +936,10 @@ textarea{
         padding-bottom: 2%;
         padding-right: 12%;
         padding-left: 12%;
+    }
+    .overlay .btn{
+        margin-top: 35%;
+        font-size: 18px;
+        line-height: 24px;
     }
 }

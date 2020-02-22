@@ -55,6 +55,8 @@ $('a[href^="#"]').on('click', function(e) {
     arrows:true,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 600,
     fade: true,
     adaptiveHeight: true,
     adaptivewidth: true

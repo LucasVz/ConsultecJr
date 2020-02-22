@@ -1,228 +1,270 @@
 <!doctype html>
-<div /div lang="pt-br">
+<html lang="pt-br">
 
-    <head>
-        <!--Required meta tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--css-->
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" type="text/css" href="pag-port.css" />
-        <!--Links para o slick-->
-        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-        <!--Bootstrap CSS-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <meta name="Description" content="#">
-        <title>Consultec Jr</title>
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-    </head>
+<head>
+  <!--Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="pag-port.css" />
+  <!--Links para o slick-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!--Bootstrap CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="Description" content="#">
+  <title>Consultec Jr</title>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
-            <a class="navbar-brand" href="#banner"><img src="imagens/logo.png" class="logo" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="#banner">INÍCIO<span
-                                class="sr-only">(current)</span></a> </li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre-nos">SOBRE NÓS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">SERVIÇOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFÓLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#depoimentos">DEPOIMENTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">NEWSLETTER</a>
-                </ul>
+  <body>
+  <style>
+    .slick-prev:before {
+      content: url(imagens/direita.png) !important;
+      width: 10% !important;
+      height: auto !important;
+
+    }
+
+    .slick-next:before {
+      content: url(imagens/esquerda.png) !important;
+      width: 10% !important;
+      height: auto !important;
+    }
+
+    #modal-02 .modal-content {
+      background: url(imagens/modal-news.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 100% !important;
+      padding-bottom: 10%;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+    <a class="navbar-brand" href="index.html"><img src="imagens/logo.png" class="logo" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#portfolio">INÍCIO<span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"><a class="nav-link" href="#footer">CONTATO</a></li>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modal-02">NEWSLETTER</button>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="modal" tabindex="-1" role="dialog" id="modal-02">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-cont">
+            <h1>ASSINE NOSSA NEWSLETTER E RECEBA CONTEÚDOS EXCLUSIVOS:</h1>
+            <input type="text" name="nome_resp" class="form-control" placeholder="EMAIL" id="form">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">QUERO RECEBER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="container-fluid">
+      <div class="home">
+        <a href="index.html"><img src="imagens/casa.png" alt="casa"></a>
+        <div class="seta-home">
+          <img src="imagens/seta.png" alt="seta">
+          <a href="#">
+            <h4>Portfólio</h4>
+          </a>
+        </div>
+      </div>
+      <div class="titulo">
+        <h2>PORTFÓLIO</h2>
+      </div>
+      <h6>Saiba mais sobre nossos projetos, conheça nosso portfólio.</h6>
+
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-01">SAIBA
+              MAIS</button>
+          </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal" tabindex="-1" id="modal-01">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="carrossel-3">
+
+                  <div class="modal-img">
+                    <img src="imagens/modal-1.png" alt="">
+                    <div class="overlay">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM
+                        ORÇAMENTO</a>
+                    </div>
+                  </div>
+
+                  <div class="modal-img">
+                    <img src="imagens/banner-pb.jpg" alt="">
+                    <div class="overlay">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM
+                        ORÇAMENTO</a>
+                    </div>
+                  </div>
+                  <div class="modal-img">
+                    <img src="imagens/modal-1.png" alt="">
+                    <div class="overlay">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <a name="button" id="button" class="btn btn-primary" href="#" role="button">SOLICITE UM
+                        ORÇAMENTO</a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-        </nav>
+          </div>
+        </div>
 
-        <div class="portfolio" id="portfolio">
-            <div class="container-fluid">
-                <div class="titulo">
-                    <h2>PORTFÓLIO</h2>
-                </div>
-                <h6>Saiba mais sobre nossos projetos, conheça nosso portfólio.</h6>
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#modal-01" role="button">SAIBA
+              MAIS</a>
+          </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
-                                data-target="#modal-01">SAIBA MAIS</button>
-                        </div>
-                    </div>
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
+              MAIS</a>
+          </div>
+        </div>
 
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
+              MAIS</a>
+          </div>
+        </div>
 
-                    <!-- The Modal -->
-                    <div class="modal" tabindex="-1" id="modal-01">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="carrossel-3">
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
+              MAIS</a>
+          </div>
+        </div>
 
-                                        <div class="modal-img">
-                                            <img src="imagens/modal-1.png" alt="">
-                                            <div class="overlay">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <a name="button" id="button" class="btn btn-primary" href="#"
-                                                    role="button">SOLICITE UM ORÇAMENTO</a>
-                                            </div>
-                                        </div>
+        <div class="col-sm-6 col-lg-4 port">
+          <img src="imagens/galeria1.jpg" alt="galeria">
+          <div class="card-port">
+            <h3 class="text">PORTFÓLIO</h3>
+            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
+          </div>
+          <div class="card-button">
+            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
+              MAIS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 
-                                        <div class="modal-img">
-                                            <img src="imagens/modal-1.png" alt="">
-                                            <div class="overlay">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <a name="button" id="button" class="btn btn-primary" href="#"
-                                                    role="button">SOLICITE UM ORÇAMENTO</a>
-                                            </div>
-                                        </div>
+    <div class="passador">
+      <li><img src="imagens/left.png" alt="esquerda"></li>
+      <li>1,</li>
+      <li>2,</li>
+      <li>3...</li>
+      <li><img src="imagens/right.png" alt="direita"></li>
+    </div>
 
-                                        <div class="modal-img">
-                                            <img src="imagens/banner-pb.jpg" alt="">
-                                            <div class="overlay">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Fechar">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <a name="button" id="button" class="btn btn-primary" href="#"
-                                                    role="button">SOLICITE UM ORÇAMENTO</a>
-                                            </div>
-                                        </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.59665740467!2d-38.5769431755998!3d-3.74350747933629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bd77cb15aa7%3A0x5faa887508cf94cf!2sConsultec%20Jr.!5e0!3m2!1spt-BR!2sbr!4v1578968331635!5m2!1spt-BR!2sbr"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <a name="button" id="button" class="btn btn-primary" href="#modal-01" role="button">SAIBA
-                                MAIS</a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
-                                MAIS</a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
-                                MAIS</a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
-                                MAIS</a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-4 port">
-                        <img src="imagens/galeria1.jpg" alt="galeria">
-                        <div class="card-port">
-                            <h3 class="text">PORTFÓLIO</h3>
-                            <img class="logo-v" src="imagens/logo-vermelho.png" alt="logo">
-                        </div>
-                        <div class="card-button">
-                            <a name="button" id="button" class="btn btn-primary" href="#" role="button">SAIBA
-                                MAIS</a>
-                        </div>
-                    </div>
-                </div>
+    <section class="footer" id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="col-footer">
+              <h1>SOBRE NÓS</h1>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
-            </section>
-
-            <div class="passador">
-                <li><</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>></li>
+          </div>
+          <div class="col-md-4">
+            <h1>CONTATO</h1>
+            <div class="info">
+              <img src="imagens/fone.png" alt="telefone">
+              <p>(84) 99803-5858</p>
+              <br>
+              <img src="imagens/email.png" alt="email">
+              <p>contato@consultecjr.com</p>
             </div>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.59665740467!2d-38.5769431755998!3d-3.74350747933629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bd77cb15aa7%3A0x5faa887508cf94cf!2sConsultec%20Jr.!5e0!3m2!1spt-BR!2sbr!4v1578968331635!5m2!1spt-BR!2sbr"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-            <section class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="col-footer">
-                                <h1>SOBRE NÓS</h1>
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h1>CONTATO</h1>
-                            <div class="info">
-                                <img src="imagens/fone.png" alt="telefone">
-                                <p>(84) 99803-5858</p>
-                                <br>
-                                <img src="imagens/email.png" alt="email">
-                                <p>contato@consultecjr.com</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <h1>FUNCIONAMENTO</h1>
-                            <p>Segunda à Sexta: Xh a Yh</p>
-                            <h1>REDES SOCIAIS</h1>
-                            <div class="social">
-                                <a href="#"><img src="imagens/facebook.png" alt="facebook"></a>
-                                <a href="#"><img src="imagens/instagram.png" alt="instagram"></a>
-                                <a href="#"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rodape">
-                    <p><b>Consultec Jr</b> © 2019 . Desenvolvido pela</p>
-                    <a href="http://www.ejectufrn.com.br" target="_blank"><img src="imagens/eject-logo.png"
-                            alt="logo eject"></a>
-                </div>
-            </section>
-            <script src="Function.js"></script>
-    </body>
+          </div>
+          <div class="col-md-4">
+            <h1>FUNCIONAMENTO</h1>
+            <p>Segunda à Sexta: Xh a Yh</p>
+            <h1>REDES SOCIAIS</h1>
+            <div class="social">
+              <a href="#"><img src="imagens/facebook.png" alt="facebook"></a>
+              <a href="#"><img src="imagens/instagram.png" alt="instagram"></a>
+              <a href="#"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rodape">
+        <p><b>Consultec Jr</b> © 2019 . Desenvolvido pela</p>
+        <a href="http://www.ejectufrn.com.br" target="_blank"><img src="imagens/eject-logo.png" alt="logo eject"></a>
+      </div>
+    </section>
+    <script src="Function.js"></script>
+  </body>
+</html>
